@@ -8,7 +8,7 @@ Our mission is to bring together a collection of high-quality, reliable, and com
 
 ## 🔗 Website
 
-👉 [Visit REM.Hub](https://remhub.vercel.app)
+👉 [Visit REM.Hub](https://rem-hub.vercel.app)
 
 ## 📦 Features
 
@@ -28,7 +28,7 @@ Our mission is to bring together a collection of high-quality, reliable, and com
 
 ## 📢 Stay Updated!
 
-✨ Don’t forget to bookmark our website and **subscribe** to get notified about new app releases and features.
+✨ Don’t forget to bookmark our website and **download** to get notified about new app releases and features.
 
 ## 📧 Contact Us
 
