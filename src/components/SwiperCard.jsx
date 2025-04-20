@@ -54,10 +54,10 @@ export default function SwiperCard({ data }) {
 
       {/* Modal */}
       {selectedApp && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
-          <div className="bg-[#1b263b] text-black w-full max-w-3xl rounded-lg overflow-hidden relative">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4 sm:px-6">
+          <div className="bg-[#1b263b] text-black w-full max-w-3xl rounded-lg overflow-hidden relative p-4 sm:p-6">
             <button
-              className="absolute top-2 right-3 text-2xl text-white font-medium mr-2 mt-2 hover:text-red-500 transition-colors duration-200"
+              className="absolute top-2 right-3 text-2xl text-white font-medium hover:text-red-500 transition-colors duration-200"
               onClick={() => setSelectedApp(null)}
             >
               ✕
@@ -82,6 +82,7 @@ export default function SwiperCard({ data }) {
                     Developed by: <strong>{selectedApp.developer}</strong>
                   </p>
                 </div>
+
                 <div className="flex flex-wrap gap-12 text-sm font-semibold">
                   <div className="text-center">
                     <p className="text-white">⭐ {selectedApp.rating} star</p>
@@ -105,7 +106,7 @@ export default function SwiperCard({ data }) {
               </div>
             </div>
 
-            <div className="flex justify-between items-center px-6 py-4 bg-[#121A29] border-t mt-2">
+            <div className="flex justify-between items-center px-4 sm:px-6 py-4 bg-[#121A29] border-t mt-2">
               <a
                 href={selectedApp.app_link}
                 target="_blank"
@@ -118,7 +119,7 @@ export default function SwiperCard({ data }) {
                 href={selectedApp.app_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-600 "
+                className="bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-600"
               >
                 DOWNLOAD NOW
               </a>
