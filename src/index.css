@@ -1,13 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #22c55e !important; /* green */
+  opacity: 1;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.run-border-btn {
+  border-radius: 9999px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 0;
+  padding: 2px; /* spacing for border thickness */
+  background: linear-gradient(
+    to right,
+    rgb(47, 60, 85),
+    #ffffff,
+    #446d8f
+  ); /* border gradient */
+}
+
+.run-border-btn > span {
+  display: block;
+  background-color: #121a29; /* or use transparent */
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Glowing edge animation still works */
+.run-border-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  padding: 2px;
+  background: linear-gradient(to right, #00f6ff, #0ff, #00f6ff);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  animation: spin-border 2s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
+.run-border-btn:hover::before {
+  opacity: 1;
+}
+
+.run-border-btn:hover > span {
+  color: #8cbfd6; /* or any color you want */
+}
+
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
