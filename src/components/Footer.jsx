@@ -61,21 +61,7 @@ export default function Footer() {
               </button>
             </div>
           </div>
-
-          <div className="flex flex-col items-start justify-between text-sm">
-            <p className="mb-4">© 2025 REM.Hub. All rights reserved.</p>
-            <div className="flex gap-3 text-xl">
-              <a href="#">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-x-twitter"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-facebook"></i>
-              </a>
-            </div>
-          </div>
+          <p className="mb-4">© 2025 REM.Hub. All rights reserved.</p>
         </div>
         <TermsModal
           isOpen={isModalOpen}
