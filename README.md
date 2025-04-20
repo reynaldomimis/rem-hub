@@ -8,7 +8,7 @@ Our mission is to bring together a collection of high-quality, reliable, and com
 
 ## 🔗 Website
 
-👉 [Visit REM.Hub](https://rem-hub.vercel.app)
+👉 [Visit REM.Hub](https://rem-hub.netlify.app)
 
 ## 📦 Features
 
