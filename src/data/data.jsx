@@ -7,6 +7,9 @@ export const injector = [
     reviews: "88.22k",
     downloads: "100K+",
     size: "17mb",
+    share_link:
+      "https://play.google.com/store/apps/details?id=com.elfilibustero.origin&pcampaignid=web_share",
+
     app_link:
       "https://play.google.com/store/apps/details?id=com.elfilibustero.origin&pcampaignid=web_share",
     description:
@@ -16,7 +19,24 @@ export const injector = [
   },
 ];
 
-export const books = [];
+export const books = [
+  {
+    title: "e-Bookora: Free Course EBooks, All in One Place",
+    version: "Version 1.1",
+    developer: "Maharlikoders",
+    rating: "0",
+    reviews: "0",
+    downloads: "0",
+    size: "4.81mb",
+    description:
+      "E-Bookora is an app that compiles free, legally available educational ebooks from various trusted online sources and organizes them by subject. It's designed to make it easier for students and learners to find valuable course resources for free — without the need for subscriptions or complex searches.",
+    image:
+      "https://res.cloudinary.com/dkbbweo5x/image/upload/v1745310402/ebookora/ebookora_logo_zz9zjn.jpg",
+    app_link:
+      "https://drive.google.com/uc?export=download&id=1QMZfqeMi_TyWsle1r2YajSjtYyJQqLfw",
+    share_link: "https://rem-hub.vercel.app/books",
+  },
+];
 
 export const movies = [];
 

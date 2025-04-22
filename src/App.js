@@ -9,7 +9,7 @@ import { injector, books, movies, software } from "./data/data";
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4 py-4 sm:px-6 sm:py-6 md:px-8 md:py-10">
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white p-4">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

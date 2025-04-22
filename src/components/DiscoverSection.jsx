@@ -5,7 +5,7 @@ export default function DiscoverSection() {
     <>
       <div className="bg-[#121A29] text-white py-10 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="md:w-2/3">
-          <h2 className="text-3xl font-bold mb-2">
+          <h2 className="text-3xl font-bold mb-2 text-center md:text-left lg:text-left">
             🚀 Discover Our Latest Apps!
           </h2>
           <p className="text-sm text-gray-300">
@@ -17,11 +17,16 @@ export default function DiscoverSection() {
           </p>
         </div>
         <div>
-          <button className="run-border-btn">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1eoYAfWxzD5s-GtDnwBwahknYyqzPHNL8"
+            download
+            className="run-border-btn inline-block text-center"
+          >
             <span>Download Now!</span>
-          </button>
+          </a>
         </div>
       </div>
+      
     </>
   );
 }

@@ -27,7 +27,7 @@ export default function SwiperCard({ data }) {
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
           }}
-          className="m-16 swiper-pagination-bullets"
+          className="m-8 swiper-pagination-bullets"
         >
           {data.map((app, index) => (
             <SwiperSlide key={index}>
@@ -54,21 +54,43 @@ export default function SwiperCard({ data }) {
 
       {/* Modal */}
       {selectedApp && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4 sm:px-6">
-          <div className="bg-[#1b263b] text-black w-full max-w-3xl rounded-lg overflow-hidden relative p-4 sm:p-6">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-2 sm:px-4">
+          <div className="bg-[#1b263b] text-black w-full max-w-3xl rounded-lg overflow-hidden relative p-2 sm:p-4">
             <button
-              className="absolute top-2 right-3 text-2xl text-white font-medium hover:text-red-500 transition-colors duration-200"
               onClick={() => setSelectedApp(null)}
+              className="absolute top-3 right-4 text-xl text-gray-300 hover:text-red-500"
             >
               ✕
             </button>
-
             <div className="flex flex-col md:flex-row">
-              <img
-                src={selectedApp.image}
-                alt={selectedApp.title}
-                className="w-32 h-32 rounded-full object-cover mt-6 mx-4"
-              />
+              {/* Left Side: Logo + Download Button */}
+              <div className="flex flex-col items-center px-4">
+                <img
+                  src={selectedApp.image}
+                  alt={selectedApp.title}
+                  className="w-32 h-32 rounded-full object-cover mt-6"
+                />
+
+                <div className="flex flex-col xs:flex-row gap-2 mt-4">
+                  <a
+                    href={selectedApp.app_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="run-border-btn">
+                      <span className="text-sm">Download Now!</span>
+                    </button>
+                  </a>
+                  <a
+                    href={selectedApp.app_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-sm px-4 py-2 hover:border-blue-300 hover:text-blue-300 transition-all text-center"
+                  >
+                    🔗 SHARE
+                  </a>
+                </div>
+              </div>
 
               <div className="md:w-2/3 p-4 space-y-4">
                 <div className="flex flex-col gap-y-1">
@@ -79,11 +101,11 @@ export default function SwiperCard({ data }) {
                     {selectedApp.version}
                   </p>
                   <p className="text-sm text-gray-300">
-                    Developed by: <strong>{selectedApp.developer}</strong>
+                    Offered by: <strong>{selectedApp.developer}</strong>
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-12 text-sm font-semibold">
+                <div className="flex flex-wrap gap-8 text-sm font-semibold">
                   <div className="text-center">
                     <p className="text-white">⭐ {selectedApp.rating} star</p>
                     <p className="text-gray-400">
@@ -104,25 +126,6 @@ export default function SwiperCard({ data }) {
                   {selectedApp.description}
                 </p>
               </div>
-            </div>
-
-            <div className="flex justify-between items-center px-4 sm:px-6 py-4 bg-[#121A29] border-t mt-2">
-              <a
-                href={selectedApp.app_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white font-semibold border-transparent hover:border-blue-300 hover:text-blue-300 transition-all duration-300"
-              >
-                SHARE APP
-              </a>
-              <a
-                href={selectedApp.app_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-600"
-              >
-                DOWNLOAD NOW
-              </a>
             </div>
           </div>
         </div>
