@@ -39,7 +39,7 @@ export default function Header() {
       <div className="flex justify-between items-center mb-4 flex-wrap ">
         {/* Logo */}
         <Link to="/" className={navLinkClass}>
-          <h1 className="text-3xl font-bold">REM.Hub</h1>
+          <h1 className="text-3xl font-bold">Maharlikoders.HUB</h1>
         </Link>
 
         {!menuOpen && (

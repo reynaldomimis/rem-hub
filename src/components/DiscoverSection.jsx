@@ -13,7 +13,7 @@ export default function DiscoverSection() {
             you're looking for productivity tools, entertainment, or utilities —
             we've got something for you! Stay updated with our newest releases,
             app updates, and exclusive features by subscribing to our
-            newsletter. ✨ Be the first to know — Subscribe now!
+            newsletter. ✨ Be the first to know — Download now!
           </p>
         </div>
         <div>
@@ -26,7 +26,6 @@ export default function DiscoverSection() {
           </a>
         </div>
       </div>
-      
     </>
   );
 }
