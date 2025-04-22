@@ -22,7 +22,7 @@ export default function Footer() {
       <footer className="bg-[#eeeef3] text-black py-6 px-6 md:px-16">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="hidden lg:block flex-shrink-0">
-            <h1 className="text-3xl font-bold text-[#00344C]">MK.HUB</h1>
+            <h1 className="text-3xl font-bold text-[#00344C]">REM.HUB</h1>
           </div>
 
           <div className="grid grid-cols-3 gap-6 text-sm">
