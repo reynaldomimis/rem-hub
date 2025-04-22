@@ -15,19 +15,19 @@ export default function TermsModal({ isOpen, onClose }) {
           📜 Terms and Conditions
         </h2>
         <p>
-          By using the <strong>Maharlikoders.Hub</strong> app (hereinafter
-          referred to as "the App"), you agree to comply with the following
-          Terms and Conditions. If you do not agree with these terms, please
-          refrain from using the App.
+          By using the <strong>REM.Hub</strong> app (hereinafter referred to as
+          "the App"), you agree to comply with the following Terms and
+          Conditions. If you do not agree with these terms, please refrain from
+          using the App.
         </p>
 
         <h3 className="text-lg font-semibold mt-4">1. General Usage</h3>
         <p>
-          <strong>Maharlikoders.Hub</strong> is a platform that allows users to
-          download a variety of content including, but not limited to, software,
-          ebooks, movies, injectors, and other digital resources. The App does
-          not require any form of registration or collection of personal data.
-          All content provided on the App is free to download and use.
+          <strong>REM.Hub</strong> is a platform that allows users to download a
+          variety of content including, but not limited to, software, ebooks,
+          movies, injectors, and other digital resources. The App does not
+          require any form of registration or collection of personal data. All
+          content provided on the App is free to download and use.
         </p>
 
         <h3 className="text-lg font-semibold mt-4">
@@ -55,8 +55,8 @@ export default function TermsModal({ isOpen, onClose }) {
             personalized based on your usage of the App.
           </li>
           <li>
-            <strong>Maharlikoders.Hub</strong> does not control the content or
-            behavior of these third-party ads.
+            <strong>REM.Hub</strong> does not control the content or behavior of
+            these third-party ads.
           </li>
           <li>
             The App may display <strong>Google AdSense</strong> ads or similar
@@ -69,7 +69,7 @@ export default function TermsModal({ isOpen, onClose }) {
         </h3>
         <ul className="list-inside list-disc ml-6 space-y-2">
           <li>
-            <strong>Maharlikoders.Hub</strong> hosts content compiled from the{" "}
+            <strong>REM.Hub</strong> hosts content compiled from the{" "}
             <strong>public domain</strong> or{" "}
             <strong>open-source educational repositories</strong>.
           </li>
@@ -96,7 +96,7 @@ export default function TermsModal({ isOpen, onClose }) {
 
         <h3 className="text-lg font-semibold mt-4">5. Prohibited Use</h3>
         <p>
-          By using <strong>Maharlikoders.Hub</strong>, you agree not to:
+          By using <strong>REM.Hub</strong>, you agree not to:
         </p>
         <ul className="list-inside list-disc ml-6">
           <li>
@@ -150,9 +150,9 @@ export default function TermsModal({ isOpen, onClose }) {
           The App is provided <strong>"as is"</strong> without any warranties or
           guarantees. We do not guarantee the functionality, availability, or
           future updates of the App. Any content downloaded through the App is
-          at the user's own risk. <strong>Maharlikoders.Hub</strong> is not
-          liable for any loss, damage, or issues that may arise from using or
-          downloading content via the App.
+          at the user's own risk. <strong>REM.Hub</strong> is not liable for any
+          loss, damage, or issues that may arise from using or downloading
+          content via the App.
         </p>
 
         <h3 className="text-lg font-semibold mt-4">9. Contact Information</h3>

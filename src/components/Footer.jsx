@@ -66,7 +66,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="mb-4 text-center">
-            © 2025 REM.Hub. All rights reserved.
+            © 2025 Maharlikoders. All rights reserved.
           </p>
         </div>
 
