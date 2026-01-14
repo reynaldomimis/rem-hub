@@ -66,34 +66,34 @@ export default function SwiperCard({ data = [] }) {
         ))}
       </Swiper>
 
-      {/* ================== MODAL ================== */}
+      {/* Modal */}
       {selectedApp && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-2 sm:px-4">
-          <div className="bg-[#1b263b] w-full max-w-3xl rounded-lg relative p-4 text-white">
+          <div className="bg-[#1b263b] text-black w-full max-w-3xl rounded-lg overflow-hidden relative p-2 sm:p-4">
             <button
               onClick={() => setSelectedApp(null)}
-              className="absolute top-3 right-4 text-xl hover:text-red-500"
+              className="absolute top-3 right-4 text-xl text-gray-300 hover:text-red-500"
             >
               ✕
             </button>
+            <div className="flex flex-col md:flex-row">
+              {/* Left Side: Logo + Download Button */}
+              <div className="flex flex-col items-center px-4">
 
-            <div className="flex flex-col md:flex-row gap-6">
-              {/* LEFT */}
-              <div className="flex flex-col items-center">
                 <img
                   src={selectedApp.image}
                   alt={selectedApp.title}
-                  className="w-32 h-32 rounded-full object-cover mt-4"
+                  className="w-32 h-32 rounded-full object-cover mt-6"
                 />
 
-                <div className="flex gap-3 mt-4">
+                <div className="flex flex-col xs:flex-row gap-2 mt-4">
                   <a
                     href={selectedApp.app_link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="run-border-btn px-4 py-2 text-sm">
-                      Download Now
+                    <button className="run-border-btn">
+                      <span className="text-sm">Download Now!</span>
                     </button>
                   </a>
 
@@ -101,46 +101,47 @@ export default function SwiperCard({ data = [] }) {
                     href={selectedApp.app_link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-gray-400 px-4 py-2 text-sm rounded hover:border-blue-400 hover:text-blue-400 transition"
+                    className="text-white text-sm px-4 py-2 hover:border-blue-300 hover:text-blue-300 transition-all text-center"
                   >
-                    🔗 Share
+                    🔗 SHARE
                   </a>
                 </div>
               </div>
 
-              {/* RIGHT */}
-              <div className="flex-1 space-y-4">
-                <div>
-                  <h2 className="text-2xl font-bold">{selectedApp.title}</h2>
-                  <p className="text-sm text-gray-300">
-                    Version: {selectedApp.version}
+              <div className="md:w-2/3 p-4 space-y-4">
+                <div className="flex flex-col gap-y-1">
+                  <h2 className="text-2xl font-bold text-white">
+                    {selectedApp.title}
+                  </h2>
+                  <p className="text-sm text-gray-300 font-normal">
+                    {selectedApp.version}
                   </p>
                   <p className="text-sm text-gray-300">
-                    Offered by{" "}
-                    <span className="font-semibold">
-                      {selectedApp.developer}
-                    </span>
+                    Offered by: <strong>{selectedApp.developer}</strong>
+
+
+
                   </p>
                 </div>
 
-                <div className="flex gap-8 text-sm font-semibold">
-                  <div>
-                    ⭐ {selectedApp.rating} <br />
-                    <span className="text-gray-400">
+                <div className="flex flex-wrap gap-8 text-sm font-semibold">
+                  <div className="text-center">
+                    <p className="text-white">⭐ {selectedApp.rating} star</p>
+                    <p className="text-gray-400">
                       {selectedApp.reviews} reviews
-                    </span>
+                    </p>
                   </div>
-                  <div>
-                    📥 {selectedApp.downloads} <br />
-                    <span className="text-gray-400">Downloads</span>
+                  <div className="text-center">
+                    <p className="text-white">📥 {selectedApp.downloads}</p>
+                    <p className="text-gray-400">Downloads</p>
                   </div>
-                  <div>
-                    🗂️ {selectedApp.size} <br />
-                    <span className="text-gray-400">File size</span>
+                  <div className="text-center">
+                    <p className="text-white">🗂️ File size</p>
+                    <p className="text-gray-300">{selectedApp.size}</p>
                   </div>
                 </div>
 
-                <p className="text-sm text-gray-200 leading-relaxed">
+                <p className="text-sm text-white mt-8">
                   {selectedApp.description}
                 </p>
               </div>
