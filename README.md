@@ -11,38 +11,11 @@ REM.Hub is a team-built frontend hub for presenting our apps and selected digita
 
 ## Features
 
-- Client-side category routes for Injectors, Books, Movies, and SOFTWARE / APK.
-- Responsive Swiper cards that open an app-details modal.
-- Direct Google Play and external resource links.
-- Explicit empty states for categories without entries.
-- Responsive navigation, footer links, and a static terms/privacy modal.
-
-## Tech stack
-
-- React 19 and React DOM 19
-- JavaScript / JSX
-- React Router 7
-- Create React App (`react-scripts` 5)
-- Tailwind CSS 3 and custom CSS
-- Swiper 11
-- npm
-
-## Project scope
-
-The catalog is currently stored in local JavaScript arrays. REM.Hub has no backend, database, user authentication, payment processing, or REST API integration in this repository. Download and install actions open external destinations; REM.Hub does not host or process files through its own server.
-
-## Run locally
-
-```bash
-npm install
-npm start
-```
-
-Create a production build with:
-
-```bash
-npm run build
-```
+- Browse Injectors, Books, Movies, and SOFTWARE / APK categories.
+- View each listed app or resource in a dedicated details panel.
+- Open Google Play listings and other resource destinations.
+- See clear notices when a category has no entries yet.
+- Use the website comfortably on desktop and mobile devices.
 
 ## Links
 
