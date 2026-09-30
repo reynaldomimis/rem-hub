@@ -11,7 +11,7 @@ REM.Hub is a team-built frontend hub for presenting our apps and selected digita
 
 ## Features
 
-- Client-side category routes for Injectors, Books, Movies, and Software.
+- Client-side category routes for Injectors, Books, Movies, and SOFTWARE / APK.
 - Responsive Swiper cards that open an app-details modal.
 - Direct Google Play and external resource links.
 - Explicit empty states for categories without entries.
