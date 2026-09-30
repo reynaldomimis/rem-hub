@@ -1,37 +1,50 @@
-# 🚀 REM.Hub
+# REM.Hub
 
-Welcome to **REM.Hub**, your ultimate destination for discovering, downloading, and enjoying a diverse collection of essential apps developed by our passionate team. Whether you're looking for the latest game injectors, streaming platforms for movies, useful software, or even a digital library of eBooks — REM.Hub offers it all in one place.
+REM.Hub is a team-built frontend hub for presenting our apps and selected digital resources in one place. Visitors can open categories, view an app’s stored details, and continue to its Google Play listing or another external destination.
 
-Our mission is to bring together a collection of high-quality, reliable, and community-driven applications that solve real-world problems, entertain, or boost your productivity. Each app we upload is selected based on what's needed most by users in today's digital world.
+## Current catalog
 
-🌟 We believe in enhancing your experience — one app at a time.
+- **Injector Origin** — Android app with a Google Play destination.
+- **e-Bookora** — educational eBook resource.
+- **Minty AI: Art Prompt Presets** — published Android prompt-reference library with a Google Play destination. It helps creators browse and copy prompt formulas for external AI tools; it is not an image generator.
+- **Movies** — category ready for future entries.
 
-## 🔗 Website
+## Features
 
-👉 [Visit REM.Hub](https://rem-hub.netlify.app)
+- Client-side category routes for Injectors, Books, Movies, and Software.
+- Responsive Swiper cards that open an app-details modal.
+- Direct Google Play and external resource links.
+- Explicit empty states for categories without entries.
+- Responsive navigation, footer links, and a static terms/privacy modal.
 
-## 📦 Features
+## Tech stack
 
-- 🎮 Game Injectors
-- 📚 eBooks Collection
-- 🎬 Movie Apps
-- 💻 Productivity Software
-- 🌐 Regular Updates
-- 💾 Easy & Secure Downloads
+- React 19 and React DOM 19
+- JavaScript / JSX
+- React Router 7
+- Create React App (`react-scripts` 5)
+- Tailwind CSS 3 and custom CSS
+- Swiper 11
+- npm
 
-## 🙌 Why Choose REM.Hub?
+## Project scope
 
-- User-focused interface
-- Regularly updated content
-- Safe, secure, and fast downloads
-- Curated apps based on societal needs
+The catalog is currently stored in local JavaScript arrays. REM.Hub has no backend, database, user authentication, payment processing, or REST API integration in this repository. Download and install actions open external destinations; REM.Hub does not host or process files through its own server.
 
-## 📢 Stay Updated!
+## Run locally
 
-✨ Don’t forget to bookmark our website and **download** to get notified about new app releases and features.
+```bash
+npm install
+npm start
+```
 
-## 📧 Contact Us
+Create a production build with:
 
-Have an app idea or request? Reach out to our team or follow us on social media to stay connected.
+```bash
+npm run build
+```
 
-Thank you for being a part of the REM.Hub community.
+## Links
+
+- [Project website](https://rem-hub.vercel.app)
+- [Minty AI on Google Play](https://play.google.com/store/apps/details?id=com.upreyvan.mintyai)
