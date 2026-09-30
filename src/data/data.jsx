@@ -40,4 +40,22 @@ export const books = [
 
 export const movies = [];
 
-export const software = [];
+export const software = [
+  {
+    title: "Minty AI: Art Prompt Presets",
+    version: "Google Play release",
+    developer: "UPREYVAN",
+    rating: "Not listed",
+    reviews: "See Google Play",
+    downloads: "50+",
+    size: "See Google Play",
+    description:
+      "Minty AI is an Android prompt-reference library for creators. Browse ready-to-use AI-art prompt formulas by style, then copy and adapt them in a preferred external text-to-image tool. Minty AI is not an image generator.",
+    image:
+      "https://play-lh.googleusercontent.com/7tmXz7GllbVDW9cU0l4dzANylGHtCWz6uN0wmG112UbVrmmNiLObnUzqzQJNbPP5sge0sNL3uP_l0DzNypr9%3Dw240-h480",
+    app_link:
+      "https://play.google.com/store/apps/details?id=com.upreyvan.mintyai",
+    share_link:
+      "https://play.google.com/store/apps/details?id=com.upreyvan.mintyai",
+  },
+];
